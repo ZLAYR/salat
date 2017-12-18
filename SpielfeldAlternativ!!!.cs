@@ -19,40 +19,54 @@ namespace Schiffe_versenken
         static bool ersteRundeSpieler1 = true;
         static bool ersteRundeSpieler2 = true;
         static PictureBox[,] pb_Spielfeld = new PictureBox[10, 10];
-        static Form HoriontalOderVertikal = new Form();
+        static Form HorizontalOderVertikal = new Form();
         static RadioButton rb_Horizontal = new RadioButton();
         static RadioButton rb_Vertikal = new RadioButton();
         static Button bttn_bestaetigen = new Button();
         static Form FormSpielerwechsel = new Form();
         static Button bttn_Weiter = new Button();
+        static ComboBox cb_schiffauswahl = new ComboBox();
         static bool xAusrichtung = true;
         static int laenge = 3;// test
         static int z = 0;
 
+
+        static Button bttn_TEST = new Button();
+        //Schiff aktuellesSchiff = new Schiff();
+
         public void FormHoV()
         {
-            HoriontalOderVertikal.Text = "Horizontal oder Vertikal";
-            HoriontalOderVertikal.MinimumSize = new Size(500, 300);
-            HoriontalOderVertikal.MaximumSize = new Size(500, 300);
-            HoriontalOderVertikal.StartPosition = FormStartPosition.CenterScreen;
-            HoriontalOderVertikal.ControlBox = false;
-            HoriontalOderVertikal.FormBorderStyle = FormBorderStyle.FixedSingle;
+            HorizontalOderVertikal.Text = "Horizontal oder Vertikal";
+            HorizontalOderVertikal.MinimumSize = new Size(500, 300);
+            HorizontalOderVertikal.MaximumSize = new Size(500, 300);
+            HorizontalOderVertikal.StartPosition = FormStartPosition.CenterScreen;
+            HorizontalOderVertikal.ControlBox = false;
+            HorizontalOderVertikal.FormBorderStyle = FormBorderStyle.FixedSingle;
 
             rb_Horizontal.Text = "Horizontal";
             rb_Horizontal.Location = new Point(25, 150);
             rb_Horizontal.Checked = true;
-            HoriontalOderVertikal.Controls.Add(rb_Horizontal);
+            HorizontalOderVertikal.Controls.Add(rb_Horizontal);
 
             rb_Vertikal.Text = "Vertikal";
             rb_Vertikal.Location = new Point(175, 150);
             rb_Horizontal.Checked = false;
-            HoriontalOderVertikal.Controls.Add(rb_Vertikal);
+            HorizontalOderVertikal.Controls.Add(rb_Vertikal);
 
             bttn_bestaetigen.Text = "Bestaetigen";
             bttn_bestaetigen.Location = new Point(125, 200);
             bttn_bestaetigen.Size = new Size(50, 50);
             bttn_bestaetigen.Click += new EventHandler(Uebergeben);
-            HoriontalOderVertikal.Controls.Add(bttn_bestaetigen);
+            HorizontalOderVertikal.Controls.Add(bttn_bestaetigen);
+            
+            cb_schiffauswahl.Location = new Point(100,100);
+            cb_schiffauswahl.Size = new Size(150,50);
+            cb_schiffauswahl.Items.Add("Uboot");
+            cb_schiffauswahl.Items.Add("Zerstoerer");
+            cb_schiffauswahl.Items.Add("Kreuzer");
+            cb_schiffauswahl.Items.Add("Flugzeugtraeger");
+            cb_schiffauswahl.DropDownStyle = ComboBoxStyle.DropDownList;
+            HorizontalOderVertikal.Controls.Add(cb_schiffauswahl);
         }
 
         public void FormSW()
@@ -85,13 +99,13 @@ namespace Schiffe_versenken
                 spieler1istDran = true;
                 spielfeldAktuell = spielfeldSpieler1;
             }
-            SpielfeldNullFuellen();
+            //SpielfeldNullFuellen();
         }
 
         //in progress
         void Spielerwechsel()
         {
-            #region speichert das aktuelle Feld im Feld des jeweiligen Spielers ab
+           /* // speichert das aktuelle Feld im Feld des jeweiligen Spielers ab
             if (spieler1istDran == true)
             {
                 spielfeldAktuell = spielfeldSpieler1;
@@ -118,37 +132,33 @@ namespace Schiffe_versenken
                         spielfeldAktuell[x, y] = 2;
                     }
                 }
-            }
-
+            }*/
+            //
             if (spieler1istDran == true)
             {
                 spielfeldSpieler1 = spielfeldAktuell;
+                spielfeldAktuell = spielfeldSpieler2;
             }
             else
             {
                 spielfeldSpieler2 = spielfeldAktuell;
+                spielfeldAktuell = spielfeldSpieler1;
             }
-            #endregion
+            
 
-            #region setzt das pb_Spielfeld zurueck
-            for(int y = 0; y < pb_Spielfeld.GetLength(1); y++)
-            {
-                for (x = 0; x < pb_Spielfeld.GetLength(0); x++)
-                {
-                    pb_Spielfeld[x, y].BackColor = Color.White;
-                }
-            }
-            #endregion
 
+
+            //funktioniert!!!
             #region fuellt das pb_Spielfeld mit den Farben des aktuellen Spielers
             for(int y = 0; y < pb_Spielfeld.GetLength(1); y++)
             {
                 for(int x = 0; x < pb_Spielfeld.GetLength(0); x++)
                 {
-                    pb_Spielfeld[x, y].BackColor = Farbe();
+                    pb_Spielfeld[x, y].BackColor = Farbe(x, y);
                 }
             }
             #endregion
+            FormSpielerwechsel.Hide();
         }
 
         void Uebergeben(object sender, EventArgs e)
@@ -161,7 +171,7 @@ namespace Schiffe_versenken
             {
                 xAusrichtung = false;
             }
-            HoriontalOderVertikal.Hide();
+            HorizontalOderVertikal.Hide();
 
         }
 
@@ -189,6 +199,9 @@ namespace Schiffe_versenken
         {
             spielfeldSpieler1[0, 0] = 1;
             spielfeldSpieler1[0, 1] = 2;
+
+            spielfeldSpieler2[0, 5] = 1;
+            spielfeldSpieler2[0, 4] = 2;
         }
         //Testwerte
 
@@ -200,15 +213,15 @@ namespace Schiffe_versenken
             x = 0;
             y = 0;
 
-            while (y < spielfeldSpieler1.GetLength(1))
+            while (y < pb_Spielfeld.GetLength(1))
             {
-                while (x < spielfeldSpieler1.GetLength(0))
+                while (x < pb_Spielfeld.GetLength(0))
                 {
                     pb_Spielfeld[x, y] = new PictureBox();
                     pb_Spielfeld[x, y].Size = new Size(50, 50);
                     pb_Spielfeld[x, y].Location = new Point(positionX, positionY);
                     pb_Spielfeld[x, y].Click += new EventHandler(Druecken);
-                    pb_Spielfeld[x, y].BackColor = Farbe();
+                    pb_Spielfeld[x, y].BackColor = Farbe(x,y);
 
                     positionX = positionX + verschiebung;
                     x++;
@@ -221,26 +234,24 @@ namespace Schiffe_versenken
             return pb_Spielfeld;
         }
 
-        Color Farbe()
+        Color Farbe(int localX, int localY)
         {
-            int[,] aktuellesSielfeld = spielfeldSpieler1;
-
             if (spieler1istDran == true)
             {
-                aktuellesSielfeld = spielfeldSpieler1;
+                spielfeldAktuell = spielfeldSpieler1;
             }
             else
             {
-                aktuellesSielfeld = spielfeldSpieler2;
+                spielfeldAktuell = spielfeldSpieler2;
             }
 
-            if (aktuellesSielfeld[x, y] == 0 || aktuellesSielfeld[x, y] == 1 || aktuellesSielfeld[x, y] == 2)  //0: Feld leer, 1: Feld befüllt, 2: kapputes Schiff
+            if (spielfeldAktuell[localX, localY] == 0 || spielfeldAktuell[localX, localY] == 1 || spielfeldAktuell[localX, localY] == 2)  //0: Feld leer, 1: Feld befüllt, 2: kapputes Schiff
             {
-                if (aktuellesSielfeld[x, y] == 0)
+                if (spielfeldAktuell[localX, localY] == 0)
                 {
                     return Color.Gray;
                 }
-                else if (aktuellesSielfeld[x, y] == 1)
+                else if (spielfeldAktuell[localX, localY] == 1)
                 {
                     return Color.Black;
                 }
@@ -314,7 +325,7 @@ namespace Schiffe_versenken
         //
         public void setzen(int posX, int posY)
         {
-            HoriontalOderVertikal.Show();
+            HorizontalOderVertikal.Show();
 
 
             if (xAusrichtung == true)
@@ -358,10 +369,12 @@ namespace Schiffe_versenken
 
             if (spieler1istDran == true)
             {
+                spielfeldAktuell = spielfeldSpieler1;
                 gegnerischesSpielfeld = spielfeldSpieler2;
             }
             else
             {
+                spielfeldAktuell = spielfeldSpieler2;
                 gegnerischesSpielfeld = spielfeldSpieler1;
             }
 
@@ -388,6 +401,29 @@ namespace Schiffe_versenken
                 spielfeldSpieler2 = gegnerischesSpielfeld;
             }
 
+        }
+
+        public void Gewinnabfrage()
+        {
+            int weristdran = 2;
+            if (spieler1istDran == true)
+            {
+                weristdran = 1;
+            }
+            for (int i = 0; i < spielfeldAktuell.GetLength(0); i++)
+            {
+                for (int k = 0; k < spielfeldAktuell.GetLength(1); k++)
+                {
+                    if (spielfeldAktuell[i, k] == 1)
+                    {
+                        //spiel Geht weiter
+                    }
+                    else
+                    {
+                        MessageBox.Show("Spieler" + weristdran + "hat gewonnnen");
+                    }
+                }
+            }
         }
     }
 }
