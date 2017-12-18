@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Schiffe_versenken/Spieler.cs">
+    <Files>
+      <File FileName="Schiffe_versenken/Schiff.cs" Line="13" Column="24" />
+      <File FileName="Schiffe_versenken/SpielfeldAlternativ!!!.cs" Line="317" Column="42" />
+      <File FileName="Schiffe_versenken/Spieler.cs" Line="11" Column="51" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
