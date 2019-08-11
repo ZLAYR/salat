@@ -1,0 +1,35 @@
+C:\Users\leave\source\repos\Schiffe_versenken\Schiffe_versenken\bin\Debug\Schiffe_versenken.exe.config
+C:\Users\leave\source\repos\Schiffe_versenken\Schiffe_versenken\bin\Debug\Schiffe_versenken.exe
+C:\Users\leave\source\repos\Schiffe_versenken\Schiffe_versenken\bin\Debug\Schiffe_versenken.pdb
+C:\Users\leave\source\repos\Schiffe_versenken\Schiffe_versenken\obj\Debug\Schiffe_versenken.csprojResolveAssemblyReference.cache
+C:\Users\leave\source\repos\Schiffe_versenken\Schiffe_versenken\obj\Debug\Schiffe_versenken.Properties.Resources.resources
+C:\Users\leave\source\repos\Schiffe_versenken\Schiffe_versenken\obj\Debug\Schiffe_versenken.csproj.GenerateResource.Cache
+C:\Users\leave\source\repos\Schiffe_versenken\Schiffe_versenken\obj\Debug\Schiffe_versenken.csproj.CoreCompileInputs.cache
+C:\Users\leave\source\repos\Schiffe_versenken\Schiffe_versenken\obj\Debug\Schiffe_versenken.exe
+C:\Users\leave\source\repos\Schiffe_versenken\Schiffe_versenken\obj\Debug\Schiffe_versenken.pdb
+E:\1337\Schule_complete\SchuleQ1\Info\Schiffe_versenken\Schiffe_versenken\bin\Debug\Schiffe_versenken.exe.config
+E:\1337\Schule_complete\SchuleQ1\Info\Schiffe_versenken\Schiffe_versenken\obj\Debug\Schiffe_versenken.exe
+E:\1337\Schule_complete\SchuleQ1\Info\Schiffe_versenken\Schiffe_versenken\obj\Debug\Schiffe_versenken.pdb
+E:\1337\Schule_complete\SchuleQ1\Info\Schiffe_versenken\Schiffe_versenken\bin\Debug\Schiffe_versenken.exe
+E:\1337\Schule_complete\SchuleQ1\Info\Schiffe_versenken\Schiffe_versenken\bin\Debug\Schiffe_versenken.pdb
+E:\1337\Schule_complete\SchuleQ1\Info\Schiffe_versenken\Schiffe_versenken\obj\Debug\Schiffe_versenken.csprojResolveAssemblyReference.cache
+E:\1337\Schule_complete\SchuleQ1\Info\Schiffe_versenken\Schiffe_versenken\obj\Debug\Schiffe_versenken.Properties.Resources.resources
+E:\1337\Schule_complete\SchuleQ1\Info\Schiffe_versenken\Schiffe_versenken\obj\Debug\Schiffe_versenken.csproj.GenerateResource.Cache
+C:\Users\leave\Desktop\Schiffe_versenken\Schiffe_versenken\bin\Debug\Schiffe_versenken.exe.config
+C:\Users\leave\Desktop\Schiffe_versenken\Schiffe_versenken\bin\Debug\Schiffe_versenken.exe
+C:\Users\leave\Desktop\Schiffe_versenken\Schiffe_versenken\bin\Debug\Schiffe_versenken.pdb
+C:\Users\leave\Desktop\Schiffe_versenken\Schiffe_versenken\obj\Debug\Schiffe_versenken.csprojResolveAssemblyReference.cache
+C:\Users\leave\Desktop\Schiffe_versenken\Schiffe_versenken\obj\Debug\Schiffe_versenken.Properties.Resources.resources
+C:\Users\leave\Desktop\Schiffe_versenken\Schiffe_versenken\obj\Debug\Schiffe_versenken.csproj.GenerateResource.Cache
+C:\Users\leave\Desktop\Schiffe_versenken\Schiffe_versenken\obj\Debug\Schiffe_versenken.csproj.CoreCompileInputs.cache
+C:\Users\leave\Desktop\Schiffe_versenken\Schiffe_versenken\obj\Debug\Schiffe_versenken.exe
+C:\Users\leave\Desktop\Schiffe_versenken\Schiffe_versenken\obj\Debug\Schiffe_versenken.pdb
+C:\Users\leave\Desktop\Projekt Schiffe versenken\Schiffe_versenken - aktuellste version\Schiffe_versenken\bin\Debug\Schiffe_versenken.exe.config
+C:\Users\leave\Desktop\Projekt Schiffe versenken\Schiffe_versenken - aktuellste version\Schiffe_versenken\bin\Debug\Schiffe_versenken.exe
+C:\Users\leave\Desktop\Projekt Schiffe versenken\Schiffe_versenken - aktuellste version\Schiffe_versenken\bin\Debug\Schiffe_versenken.pdb
+C:\Users\leave\Desktop\Projekt Schiffe versenken\Schiffe_versenken - aktuellste version\Schiffe_versenken\obj\Debug\Schiffe_versenken.csprojResolveAssemblyReference.cache
+C:\Users\leave\Desktop\Projekt Schiffe versenken\Schiffe_versenken - aktuellste version\Schiffe_versenken\obj\Debug\Schiffe_versenken.Properties.Resources.resources
+C:\Users\leave\Desktop\Projekt Schiffe versenken\Schiffe_versenken - aktuellste version\Schiffe_versenken\obj\Debug\Schiffe_versenken.csproj.GenerateResource.Cache
+C:\Users\leave\Desktop\Projekt Schiffe versenken\Schiffe_versenken - aktuellste version\Schiffe_versenken\obj\Debug\Schiffe_versenken.csproj.CoreCompileInputs.cache
+C:\Users\leave\Desktop\Projekt Schiffe versenken\Schiffe_versenken - aktuellste version\Schiffe_versenken\obj\Debug\Schiffe_versenken.exe
+C:\Users\leave\Desktop\Projekt Schiffe versenken\Schiffe_versenken - aktuellste version\Schiffe_versenken\obj\Debug\Schiffe_versenken.pdb
